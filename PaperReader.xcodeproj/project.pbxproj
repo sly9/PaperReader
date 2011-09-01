@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13820AEA140F1C0300443BEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13820AE9140F1C0300443BEF /* Cocoa.framework */; };
+		13820AF4140F1C0300443BEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13820AF2140F1C0300443BEF /* InfoPlist.strings */; };
+		13820AF6140F1C0300443BEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820AF5140F1C0300443BEF /* main.m */; };
+		13820AFA140F1C0300443BEF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 13820AF8140F1C0300443BEF /* Credits.rtf */; };
+		13820AFD140F1C0300443BEF /* LYPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820AFC140F1C0300443BEF /* LYPDFDocument.m */; };
+		13820B00140F1C0300443BEF /* LYPDFDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13820AFE140F1C0300443BEF /* LYPDFDocument.xib */; };
+		13820B03140F1C0300443BEF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13820B01140F1C0300443BEF /* MainMenu.xib */; };
+		13820B0B140F1C0300443BEF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13820B0A140F1C0300443BEF /* SenTestingKit.framework */; };
+		13820B0C140F1C0300443BEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13820AE9140F1C0300443BEF /* Cocoa.framework */; };
+		13820B14140F1C0300443BEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13820B12140F1C0300443BEF /* InfoPlist.strings */; };
+		13820B16140F1C0300443BEF /* PaperReaderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 13820B15140F1C0300443BEF /* PaperReaderTests.h */; };
+		13820B18140F1C0300443BEF /* PaperReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B17140F1C0300443BEF /* PaperReaderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13820B0D140F1C0300443BEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13820ADC140F1C0300443BEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13820AE4140F1C0300443BEF;
+			remoteInfo = PaperReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13820AE5140F1C0300443BEF /* PaperReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13820AE9140F1C0300443BEF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		13820AEC140F1C0300443BEF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		13820AED140F1C0300443BEF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		13820AEE140F1C0300443BEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		13820AF1140F1C0300443BEF /* PaperReader-Info.plist */ = {isa = PBXFileReference; path = "PaperReader-Info.plist"; sourceTree = "<group>"; };
+		13820AF3140F1C0300443BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13820AF5140F1C0300443BEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13820AF7140F1C0300443BEF /* PaperReader-Prefix.pch */ = {isa = PBXFileReference; path = "PaperReader-Prefix.pch"; sourceTree = "<group>"; };
+		13820AF9140F1C0300443BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		13820AFB140F1C0300443BEF /* LYPDFDocument.h */ = {isa = PBXFileReference; path = LYPDFDocument.h; sourceTree = "<group>"; };
+		13820AFC140F1C0300443BEF /* LYPDFDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPDFDocument.m; sourceTree = "<group>"; };
+		13820AFF140F1C0300443BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LYPDFDocument.xib; sourceTree = "<group>"; };
+		13820B02140F1C0300443BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		13820B09140F1C0300443BEF /* PaperReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13820B0A140F1C0300443BEF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		13820B11140F1C0300443BEF /* PaperReaderTests-Info.plist */ = {isa = PBXFileReference; path = "PaperReaderTests-Info.plist"; sourceTree = "<group>"; };
+		13820B13140F1C0300443BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13820B15140F1C0300443BEF /* PaperReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperReaderTests.h; sourceTree = "<group>"; };
+		13820B17140F1C0300443BEF /* PaperReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperReaderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13820AE2140F1C0300443BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13820AEA140F1C0300443BEF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13820B05140F1C0300443BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13820B0B140F1C0300443BEF /* SenTestingKit.framework in Frameworks */,
+				13820B0C140F1C0300443BEF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13820ADA140F1C0300443BEF = {
+			isa = PBXGroup;
+			children = (
+				13820AEF140F1C0300443BEF /* PaperReader */,
+				13820B0F140F1C0300443BEF /* PaperReaderTests */,
+				13820AE8140F1C0300443BEF /* Frameworks */,
+				13820AE6140F1C0300443BEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13820AE6140F1C0300443BEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13820AE5140F1C0300443BEF /* PaperReader.app */,
+				13820B09140F1C0300443BEF /* PaperReaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13820AE8140F1C0300443BEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13820AE9140F1C0300443BEF /* Cocoa.framework */,
+				13820B0A140F1C0300443BEF /* SenTestingKit.framework */,
+				13820AEB140F1C0300443BEF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13820AEB140F1C0300443BEF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13820AEC140F1C0300443BEF /* AppKit.framework */,
+				13820AED140F1C0300443BEF /* CoreData.framework */,
+				13820AEE140F1C0300443BEF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		13820AEF140F1C0300443BEF /* PaperReader */ = {
+			isa = PBXGroup;
+			children = (
+				13820AFB140F1C0300443BEF /* LYPDFDocument.h */,
+				13820AFC140F1C0300443BEF /* LYPDFDocument.m */,
+				13820AFE140F1C0300443BEF /* LYPDFDocument.xib */,
+				13820B01140F1C0300443BEF /* MainMenu.xib */,
+				13820AF0140F1C0300443BEF /* Supporting Files */,
+			);
+			path = PaperReader;
+			sourceTree = "<group>";
+		};
+		13820AF0140F1C0300443BEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13820AF1140F1C0300443BEF /* PaperReader-Info.plist */,
+				13820AF2140F1C0300443BEF /* InfoPlist.strings */,
+				13820AF5140F1C0300443BEF /* main.m */,
+				13820AF7140F1C0300443BEF /* PaperReader-Prefix.pch */,
+				13820AF8140F1C0300443BEF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13820B0F140F1C0300443BEF /* PaperReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				13820B15140F1C0300443BEF /* PaperReaderTests.h */,
+				13820B17140F1C0300443BEF /* PaperReaderTests.m */,
+				13820B10140F1C0300443BEF /* Supporting Files */,
+			);
+			path = PaperReaderTests;
+			sourceTree = "<group>";
+		};
+		13820B10140F1C0300443BEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13820B11140F1C0300443BEF /* PaperReaderTests-Info.plist */,
+				13820B12140F1C0300443BEF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13820AE4140F1C0300443BEF /* PaperReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13820B1B140F1C0300443BEF /* Build configuration list for PBXNativeTarget "PaperReader" */;
+			buildPhases = (
+				13820AE1140F1C0300443BEF /* Sources */,
+				13820AE2140F1C0300443BEF /* Frameworks */,
+				13820AE3140F1C0300443BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaperReader;
+			productName = PaperReader;
+			productReference = 13820AE5140F1C0300443BEF /* PaperReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13820B08140F1C0300443BEF /* PaperReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13820B1E140F1C0300443BEF /* Build configuration list for PBXNativeTarget "PaperReaderTests" */;
+			buildPhases = (
+				13820B04140F1C0300443BEF /* Sources */,
+				13820B05140F1C0300443BEF /* Frameworks */,
+				13820B06140F1C0300443BEF /* Resources */,
+				13820B07140F1C0300443BEF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13820B0E140F1C0300443BEF /* PBXTargetDependency */,
+			);
+			name = PaperReaderTests;
+			productName = PaperReaderTests;
+			productReference = 13820B09140F1C0300443BEF /* PaperReaderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13820ADC140F1C0300443BEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Netease.com Inc";
+			};
+			buildConfigurationList = 13820ADF140F1C0300443BEF /* Build configuration list for PBXProject "PaperReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13820ADA140F1C0300443BEF;
+			productRefGroup = 13820AE6140F1C0300443BEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13820AE4140F1C0300443BEF /* PaperReader */,
+				13820B08140F1C0300443BEF /* PaperReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13820AE3140F1C0300443BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13820AF4140F1C0300443BEF /* InfoPlist.strings in Resources */,
+				13820AFA140F1C0300443BEF /* Credits.rtf in Resources */,
+				13820B00140F1C0300443BEF /* LYPDFDocument.xib in Resources */,
+				13820B03140F1C0300443BEF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13820B06140F1C0300443BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13820B14140F1C0300443BEF /* InfoPlist.strings in Resources */,
+				13820B16140F1C0300443BEF /* PaperReaderTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13820B07140F1C0300443BEF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13820AE1140F1C0300443BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13820AF6140F1C0300443BEF /* main.m in Sources */,
+				13820AFD140F1C0300443BEF /* LYPDFDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13820B04140F1C0300443BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13820B18140F1C0300443BEF /* PaperReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13820B0E140F1C0300443BEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13820AE4140F1C0300443BEF /* PaperReader */;
+			targetProxy = 13820B0D140F1C0300443BEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13820AF2140F1C0300443BEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13820AF3140F1C0300443BEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		13820AF8140F1C0300443BEF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13820AF9140F1C0300443BEF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		13820AFE140F1C0300443BEF /* LYPDFDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13820AFF140F1C0300443BEF /* en */,
+			);
+			name = LYPDFDocument.xib;
+			sourceTree = "<group>";
+		};
+		13820B01140F1C0300443BEF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13820B02140F1C0300443BEF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		13820B12140F1C0300443BEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13820B13140F1C0300443BEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13820B19140F1C0300443BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		13820B1A140F1C0300443BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		13820B1C140F1C0300443BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PaperReader/PaperReader-Prefix.pch";
+				INFOPLIST_FILE = "PaperReader/PaperReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		13820B1D140F1C0300443BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PaperReader/PaperReader-Prefix.pch";
+				INFOPLIST_FILE = "PaperReader/PaperReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		13820B1F140F1C0300443BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PaperReader.app/Contents/MacOS/PaperReader";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PaperReader/PaperReader-Prefix.pch";
+				INFOPLIST_FILE = "PaperReaderTests/PaperReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		13820B20140F1C0300443BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PaperReader.app/Contents/MacOS/PaperReader";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PaperReader/PaperReader-Prefix.pch";
+				INFOPLIST_FILE = "PaperReaderTests/PaperReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13820ADF140F1C0300443BEF /* Build configuration list for PBXProject "PaperReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13820B19140F1C0300443BEF /* Debug */,
+				13820B1A140F1C0300443BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13820B1B140F1C0300443BEF /* Build configuration list for PBXNativeTarget "PaperReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13820B1C140F1C0300443BEF /* Debug */,
+				13820B1D140F1C0300443BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13820B1E140F1C0300443BEF /* Build configuration list for PBXNativeTarget "PaperReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13820B1F140F1C0300443BEF /* Debug */,
+				13820B20140F1C0300443BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13820ADC140F1C0300443BEF /* Project object */;
+}
