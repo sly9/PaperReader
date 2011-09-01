@@ -9,6 +9,7 @@
 #import "LYPDFDocument.h"
 
 @implementation LYPDFDocument
+@synthesize data,doc;
 
 - (id)init
 {
@@ -30,6 +31,22 @@
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
 {
     [super windowControllerDidLoadNib:aController];
+    NSLog(@"windowControllerDidLoadNib %@",[[[aController window] contentView] subviews]);    
+    
+    self.doc = [[PDFDocument alloc] initWithData:self.data];
+    
+    PDFView *_pdfView = [[[[aController window] contentView] subviews] objectAtIndex:0];
+    [_pdfView setDocument: self.doc];
+
+    
+    //set selection delegate
+    selectionDelegate = [[[PDFSelectionDelegate alloc] initWithPDFView:_pdfView onWindow:[aController window]] retain];
+    [[NSNotificationCenter defaultCenter] addObserver: selectionDelegate selector: @selector(selectionUpdated:) 
+                                                 name: PDFViewSelectionChangedNotification object: _pdfView];
+//    NSWindow *window = [self windowForSheet];
+//    NSLog([[[window contentView] subviews] description]);
+
+    
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
 }
 
@@ -45,8 +62,12 @@
     return nil;
 }
 
-- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
+- (BOOL)readFromData:(NSData *)somedata ofType:(NSString *)typeName error:(NSError **)outError
 {
+    NSLog(@"readFromData (%lu) bytes ofType %@",[somedata length],typeName);
+    self.data = somedata;
+    
+    
     /*
     Insert code here to read your document from the given data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning NO.
     You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead.

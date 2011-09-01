@@ -19,6 +19,20 @@
 		13820B14140F1C0300443BEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13820B12140F1C0300443BEF /* InfoPlist.strings */; };
 		13820B16140F1C0300443BEF /* PaperReaderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 13820B15140F1C0300443BEF /* PaperReaderTests.h */; };
 		13820B18140F1C0300443BEF /* PaperReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B17140F1C0300443BEF /* PaperReaderTests.m */; };
+		13820B26140F213D00443BEF /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13820B25140F213D00443BEF /* Quartz.framework */; };
+		13820B29140F222C00443BEF /* PDFSelectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B28140F222C00443BEF /* PDFSelectionDelegate.m */; };
+		13820B38140F2D3500443BEF /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B37140F2D3500443BEF /* MAAttachedWindow.m */; };
+		13820B52140F353700443BEF /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B3E140F353700443BEF /* ASIDataCompressor.m */; };
+		13820B53140F353700443BEF /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B40140F353700443BEF /* ASIDataDecompressor.m */; };
+		13820B54140F353700443BEF /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B42140F353700443BEF /* ASIDownloadCache.m */; };
+		13820B55140F353700443BEF /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B44140F353700443BEF /* ASIFormDataRequest.m */; };
+		13820B56140F353700443BEF /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B46140F353700443BEF /* ASIHTTPRequest.m */; };
+		13820B57140F353700443BEF /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B4A140F353700443BEF /* ASIInputStream.m */; };
+		13820B58140F353700443BEF /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 13820B4C140F353700443BEF /* ASINetworkQueue.m */; };
+		13820B5D140F369A00443BEF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13820B5C140F369A00443BEF /* libxml2.dylib */; };
+		13820B5F140F372E00443BEF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13820B5E140F372E00443BEF /* libz.dylib */; };
+		13820B61140F386300443BEF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13820B60140F386300443BEF /* SystemConfiguration.framework */; };
+		13820B63140F410700443BEF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13820B62140F410700443BEF /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +51,48 @@
 		13820AEC140F1C0300443BEF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		13820AED140F1C0300443BEF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		13820AEE140F1C0300443BEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		13820AF1140F1C0300443BEF /* PaperReader-Info.plist */ = {isa = PBXFileReference; path = "PaperReader-Info.plist"; sourceTree = "<group>"; };
+		13820AF1140F1C0300443BEF /* PaperReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaperReader-Info.plist"; sourceTree = "<group>"; };
 		13820AF3140F1C0300443BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13820AF5140F1C0300443BEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		13820AF7140F1C0300443BEF /* PaperReader-Prefix.pch */ = {isa = PBXFileReference; path = "PaperReader-Prefix.pch"; sourceTree = "<group>"; };
+		13820AF7140F1C0300443BEF /* PaperReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaperReader-Prefix.pch"; sourceTree = "<group>"; };
 		13820AF9140F1C0300443BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		13820AFB140F1C0300443BEF /* LYPDFDocument.h */ = {isa = PBXFileReference; path = LYPDFDocument.h; sourceTree = "<group>"; };
+		13820AFB140F1C0300443BEF /* LYPDFDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPDFDocument.h; sourceTree = "<group>"; };
 		13820AFC140F1C0300443BEF /* LYPDFDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPDFDocument.m; sourceTree = "<group>"; };
 		13820AFF140F1C0300443BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LYPDFDocument.xib; sourceTree = "<group>"; };
 		13820B02140F1C0300443BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		13820B09140F1C0300443BEF /* PaperReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13820B0A140F1C0300443BEF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		13820B11140F1C0300443BEF /* PaperReaderTests-Info.plist */ = {isa = PBXFileReference; path = "PaperReaderTests-Info.plist"; sourceTree = "<group>"; };
+		13820B11140F1C0300443BEF /* PaperReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaperReaderTests-Info.plist"; sourceTree = "<group>"; };
 		13820B13140F1C0300443BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13820B15140F1C0300443BEF /* PaperReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperReaderTests.h; sourceTree = "<group>"; };
 		13820B17140F1C0300443BEF /* PaperReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperReaderTests.m; sourceTree = "<group>"; };
+		13820B25140F213D00443BEF /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		13820B27140F222C00443BEF /* PDFSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFSelectionDelegate.h; sourceTree = "<group>"; };
+		13820B28140F222C00443BEF /* PDFSelectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFSelectionDelegate.m; sourceTree = "<group>"; };
+		13820B36140F2D3500443BEF /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
+		13820B37140F2D3500443BEF /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
+		13820B3C140F353700443BEF /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		13820B3D140F353700443BEF /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		13820B3E140F353700443BEF /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		13820B3F140F353700443BEF /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		13820B40140F353700443BEF /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		13820B41140F353700443BEF /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		13820B42140F353700443BEF /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		13820B43140F353700443BEF /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		13820B44140F353700443BEF /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		13820B45140F353700443BEF /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		13820B46140F353700443BEF /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		13820B47140F353700443BEF /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		13820B48140F353700443BEF /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		13820B49140F353700443BEF /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		13820B4A140F353700443BEF /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		13820B4B140F353700443BEF /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		13820B4C140F353700443BEF /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		13820B4D140F353700443BEF /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		13820B5C140F369A00443BEF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		13820B5E140F372E00443BEF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		13820B60140F386300443BEF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		13820B62140F410700443BEF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +100,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13820B63140F410700443BEF /* WebKit.framework in Frameworks */,
+				13820B61140F386300443BEF /* SystemConfiguration.framework in Frameworks */,
+				13820B5F140F372E00443BEF /* libz.dylib in Frameworks */,
+				13820B5D140F369A00443BEF /* libxml2.dylib in Frameworks */,
+				13820B26140F213D00443BEF /* Quartz.framework in Frameworks */,
 				13820AEA140F1C0300443BEF /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +124,11 @@
 		13820ADA140F1C0300443BEF = {
 			isa = PBXGroup;
 			children = (
+				13820B62140F410700443BEF /* WebKit.framework */,
+				13820B60140F386300443BEF /* SystemConfiguration.framework */,
+				13820B5E140F372E00443BEF /* libz.dylib */,
+				13820B5C140F369A00443BEF /* libxml2.dylib */,
+				13820B25140F213D00443BEF /* Quartz.framework */,
 				13820AEF140F1C0300443BEF /* PaperReader */,
 				13820B0F140F1C0300443BEF /* PaperReaderTests */,
 				13820AE8140F1C0300443BEF /* Frameworks */,
@@ -117,11 +168,16 @@
 		13820AEF140F1C0300443BEF /* PaperReader */ = {
 			isa = PBXGroup;
 			children = (
+				13820B39140F352400443BEF /* ASI */,
 				13820AFB140F1C0300443BEF /* LYPDFDocument.h */,
 				13820AFC140F1C0300443BEF /* LYPDFDocument.m */,
 				13820AFE140F1C0300443BEF /* LYPDFDocument.xib */,
 				13820B01140F1C0300443BEF /* MainMenu.xib */,
 				13820AF0140F1C0300443BEF /* Supporting Files */,
+				13820B27140F222C00443BEF /* PDFSelectionDelegate.h */,
+				13820B28140F222C00443BEF /* PDFSelectionDelegate.m */,
+				13820B36140F2D3500443BEF /* MAAttachedWindow.h */,
+				13820B37140F2D3500443BEF /* MAAttachedWindow.m */,
 			);
 			path = PaperReader;
 			sourceTree = "<group>";
@@ -155,6 +211,31 @@
 				13820B12140F1C0300443BEF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13820B39140F352400443BEF /* ASI */ = {
+			isa = PBXGroup;
+			children = (
+				13820B3C140F353700443BEF /* ASICacheDelegate.h */,
+				13820B3D140F353700443BEF /* ASIDataCompressor.h */,
+				13820B3E140F353700443BEF /* ASIDataCompressor.m */,
+				13820B3F140F353700443BEF /* ASIDataDecompressor.h */,
+				13820B40140F353700443BEF /* ASIDataDecompressor.m */,
+				13820B41140F353700443BEF /* ASIDownloadCache.h */,
+				13820B42140F353700443BEF /* ASIDownloadCache.m */,
+				13820B43140F353700443BEF /* ASIFormDataRequest.h */,
+				13820B44140F353700443BEF /* ASIFormDataRequest.m */,
+				13820B45140F353700443BEF /* ASIHTTPRequest.h */,
+				13820B46140F353700443BEF /* ASIHTTPRequest.m */,
+				13820B47140F353700443BEF /* ASIHTTPRequestConfig.h */,
+				13820B48140F353700443BEF /* ASIHTTPRequestDelegate.h */,
+				13820B49140F353700443BEF /* ASIInputStream.h */,
+				13820B4A140F353700443BEF /* ASIInputStream.m */,
+				13820B4B140F353700443BEF /* ASINetworkQueue.h */,
+				13820B4C140F353700443BEF /* ASINetworkQueue.m */,
+				13820B4D140F353700443BEF /* ASIProgressDelegate.h */,
+			);
+			name = ASI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +349,15 @@
 			files = (
 				13820AF6140F1C0300443BEF /* main.m in Sources */,
 				13820AFD140F1C0300443BEF /* LYPDFDocument.m in Sources */,
+				13820B29140F222C00443BEF /* PDFSelectionDelegate.m in Sources */,
+				13820B38140F2D3500443BEF /* MAAttachedWindow.m in Sources */,
+				13820B52140F353700443BEF /* ASIDataCompressor.m in Sources */,
+				13820B53140F353700443BEF /* ASIDataDecompressor.m in Sources */,
+				13820B54140F353700443BEF /* ASIDownloadCache.m in Sources */,
+				13820B55140F353700443BEF /* ASIFormDataRequest.m in Sources */,
+				13820B56140F353700443BEF /* ASIHTTPRequest.m in Sources */,
+				13820B57140F353700443BEF /* ASIInputStream.m in Sources */,
+				13820B58140F353700443BEF /* ASINetworkQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +471,10 @@
 		13820B1C140F1C0300443BEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks/Quartz.framework/Versions/A/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PaperReader/PaperReader-Prefix.pch";
 				INFOPLIST_FILE = "PaperReader/PaperReader-Info.plist";
@@ -392,6 +486,10 @@
 		13820B1D140F1C0300443BEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks/Quartz.framework/Versions/A/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PaperReader/PaperReader-Prefix.pch";
 				INFOPLIST_FILE = "PaperReader/PaperReader-Info.plist";

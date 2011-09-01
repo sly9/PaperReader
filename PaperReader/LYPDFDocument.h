@@ -7,8 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <PDFKit/PDFDocument.h>
+#import <PDFKit/PDFView.h>
+#import "PDFSelectionDelegate.h"
 
 @interface LYPDFDocument : NSDocument {
+    NSData *data;
+    PDFDocument *doc;
+    PDFSelectionDelegate *selectionDelegate;
 }
+
+@property (nonatomic,retain) NSData *data;
+@property (nonatomic,retain) PDFDocument *doc;
 
 @end
